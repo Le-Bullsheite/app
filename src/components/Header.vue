@@ -10,7 +10,7 @@
         <RouterLink to="/contact"> Contact </RouterLink>
       </nav>
     <main>
-      <Routerview></Routerview>
+      <RouterView></RouterView>
     </main>
   </section>
 </template>

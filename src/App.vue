@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <Careers/>
+  <div id="app">
+    <Header/>
   </div>
 </template>
 
 <script>
-import Careers from './components/Careers.vue';
+import Header from './components/Header';
+
 export default {
     components: {
         Careers
