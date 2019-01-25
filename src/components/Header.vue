@@ -1,9 +1,9 @@
 <template>
   <section>
-    <header>
+    <header class="fade-in">
       <img src="../../assets/logo.png" alt="">
     </header>
-      <nav>
+      <nav class="fade-in">
         <RouterLink to="/"> Home </RouterLink>
         <RouterLink to="/about"> About </RouterLink>
         <RouterLink to="/careers"> Careers </RouterLink>
@@ -32,7 +32,6 @@ header {
 
 nav a {
   font-weight: bold;
-  /* margin-left: 25px; */
   line-height: 1.6em;
   letter-spacing: .05em;
   padding: 30px;
@@ -46,5 +45,21 @@ nav a {
 img {
   width: 125px;
   height: 75px;
+  z-index:99;
+}
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 </style>

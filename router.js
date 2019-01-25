@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router';
-import Home from './src/components/Home';
+import Home from './src/components/Home/Home';
 import About from './src/components/About';
 import Careers from './src/components/Careers';
 import Contact from './src/components/Contact';
