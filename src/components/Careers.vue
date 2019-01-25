@@ -1,7 +1,7 @@
 <template>
     <div>
         <img id="adult" src="../../assets/adult.jpg">
-        <h1>
+        <h1 class="fade-in">
             Work <span id="with">With</span> Us
         </h1>
         <div id="join-container">
@@ -74,5 +74,20 @@ h3 {
 hr {
     border-top: 1px solid rgb(88, 85, 85);
     width: 30%;
+}
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 </style>
