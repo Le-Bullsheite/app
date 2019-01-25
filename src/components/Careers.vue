@@ -4,27 +4,44 @@
         <h1 class="fade-in">
             Work <span id="with">With</span> Us
         </h1>
-        <div id="join-container">
-            <h2>
-                Join Our Team
-            </h2>
-            <hr>
-            <h3>
-                Lé Bullsheité is a true one of a kind agency. We combined our passion for BUZZWORD to help our clients
-                BUZZWORD.
-            </h3>
-            <hr>
-            <Job/>
+        <div id="main">
+            <QuoteBlock
+            :quoteBlockName="quoteBlockName"
+            :quoteBlockDescription="quoteBlockDescription"
+            :quoteBlockText="quoteBlockText"
+            />
+            <div id="join-container">
+                <h2>
+                    Join Our Team
+                </h2>
+                <hr>
+                <h3>
+                    Lé Bullsheité is a true one of a kind agency. We combined our passion for BUZZWORD to help our clients
+                    BUZZWORD.
+                </h3>
+                <hr>
+                <Job/>
+            </div>
+
         </div>
     </div>
 </template>
 
 <script>
 import Job from './Job.vue';
+import QuoteBlock from './QuoteBlock.vue';
 
 export default {
+    data() {
+        return {
+            quoteBlockName: 'Kayne West',
+            quoteBlockDescription: 'Voice of a Generation',
+            quoteBlockText: 'I am Warhol. I am the number one most impactful artist of our generation. I am Shakespeare in the flesh.'
+        };
+    },
     components: {
-        Job
+        Job,
+        QuoteBlock
     }
 };
 </script>
@@ -49,9 +66,13 @@ export default {
     color:rgb(254, 243, 132);
 
 }
+#main {
+    background-color: white;
+}
 h1 {
     text-align: center;
     margin-top: 20vh;
+    margin-bottom: 20vh;
     font-size: 16vh;
     color: rgb(88, 85, 85);
 }
