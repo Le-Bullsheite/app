@@ -1,50 +1,36 @@
 <template>
   <section>
-    <div> 
-      <h1>
-        Home </h1> </div>
-    <hooper :itemsToShow="4" :centerMode="true" pagination="no">
-      <slide>
-      <img src="../../assets/adult.jpg">
-      </slide>
-      <slide>
-      <img src="../../assets/adult.jpg" alt="">
-      </slide>
-      <slide>
-      <img src="../../assets/adult.jpg" alt="">
-      </slide>
-      <slide>
-      <img src="../../assets/adult.jpg" alt="">
-      </slide>
-    </hooper>
+    <carousel>
+    <slide>
+      <img src="../../assets/laptop.jpg" width="100%" height="100%">
+    </slide>
+    <slide>
+      <img src="../../assets/paper.jpg" width="100%" height="100%">
+    </slide>
+    <slide>
+      <img src="../../assets/workplace.jpg" width="100%" height="100%">
+    </slide>
+    <slide>
+      <img src="../../assets/laptop.jpg" width="100%" height="100%">
+    </slide>
+</carousel>
+    
   </section>
 </template>
 
 <script>
-import { Hooper, Slide } from 'hooper';
-
-  export default {
-    name: 'App',
+import { Carousel, Slide } from 'vue-carousel';
+export default {
     components: {
-      Hooper,
-      Slide
-    },
-    data() {
-      return {
-        hooperSettings: {
-          itemsToShow: 1,
-          centerMode: true
-        }
-      }
+        Carousel,
+        Slide
     }
-  }
+};
 
 </script>
 
 <style scoped>
 img {
-  width: 100px;
-  height: 100px;
+  margin-top: 100px;
 }
-
 </style>
