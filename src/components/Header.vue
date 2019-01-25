@@ -32,7 +32,6 @@ header {
 
 nav a {
   font-weight: bold;
-  /* margin-left: 25px; */
   line-height: 1.6em;
   letter-spacing: .05em;
   padding: 30px;
@@ -46,5 +45,6 @@ nav a {
 img {
   width: 125px;
   height: 75px;
+  z-index:99;
 }
 </style>
