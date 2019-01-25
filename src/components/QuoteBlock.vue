@@ -18,7 +18,7 @@ export default {
         quoteBlockDescription: String,
         quoteBlockText: String
     }
-}
+};
 </script>
 
 <style lang="postcss" scoped>
@@ -32,5 +32,13 @@ figure {
 }
 blockquote {
     margin: 1vh auto 1vh auto;
+    letter-spacing: .03em;
+}
+span {
+    color: rgb(254, 243, 132);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(254, 243, 132);
+    letter-spacing: .03em;
+    font-style: italic;
 }
 </style>

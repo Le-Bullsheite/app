@@ -5,11 +5,14 @@
             Work <span id="with">With</span> Us
         </h1>
         <div id="main">
-            <QuoteBlock
-            :quoteBlockName="quoteBlockName"
-            :quoteBlockDescription="quoteBlockDescription"
-            :quoteBlockText="quoteBlockText"
-            />
+            <div id="two-column">
+                <QuoteBlock
+                :quoteBlockName="quoteBlockName"
+                :quoteBlockDescription="quoteBlockDescription"
+                :quoteBlockText="quoteBlockText"
+                />
+            <img id="smiling-worker" src="../../assets/smiling-worker.jpg">
+            </div>
             <div id="join-container">
                 <h2>
                     Join Our Team
@@ -64,10 +67,19 @@ export default {
 }
 #with {
     color:rgb(254, 243, 132);
-
 }
 #main {
     background-color: white;
+}
+#two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+#smiling-worker {
+    width: 98%;
+    margin: 1vh;
+
 }
 h1 {
     text-align: center;
@@ -111,4 +123,5 @@ hr {
 		opacity: 1;
 	}
 }
+
 </style>
