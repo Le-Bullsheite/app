@@ -41,6 +41,7 @@ h2 {
   margin-top: 100px;
   text-align: center;
   font-size: 2.5em;
+  letter-spacing: .03em;
 }
 ul {
   display: grid;

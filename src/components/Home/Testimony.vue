@@ -35,6 +35,7 @@ h2 {
   text-align: center;
   padding: 30px;
   font-size: 2.5em;
+  letter-spacing: .03em;
 }
 ul {
   display: grid;
