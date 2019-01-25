@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Header/>
+    <Careers/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Careers from './components/Careers.vue';
 export default {
-  components: {
-    Header
-  }
-}
+    components: {
+        Careers
+    }
+};
 </script>
 
 <style>

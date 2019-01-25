@@ -10,8 +10,7 @@
   },
   "env": {
       "browser": true,
-      "es6": true,
-      "vuejs": true
+      "es6": true
   },
   "globals": {
       "Chart": false
