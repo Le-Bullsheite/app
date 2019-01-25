@@ -14,13 +14,18 @@
                 BUZZWORD.
             </h3>
             <hr>
+            <Job/>
         </div>
     </div>
 </template>
 
 <script>
+import Job from './Job.vue';
+
 export default {
-    
+    components: {
+        Job
+    }
 };
 </script>
 
