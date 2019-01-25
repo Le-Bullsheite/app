@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <h1>Hi</h1>
-    </div>
+    <div><h1>ADLKSFJL</h1></div>
 </template>
 
 <script>

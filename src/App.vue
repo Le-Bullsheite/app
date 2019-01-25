@@ -1,14 +1,14 @@
 <template>
   <div>
-    <Careers/>
+    <FakeJob/>
   </div>
 </template>
 
 <script>
-import Careers from './components/Careers.vue'
+import FakeJob from './components/careers/FakeJob.vue'
 export default {
   components: {
-    Careers
+    FakeJob
   }
 }
 </script>
