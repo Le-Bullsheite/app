@@ -281,7 +281,12 @@ const makePhrase = () => {
     const adjectivesIndex = Math.floor((Math.random() * adjectives.length) + 1);
     const verbsIndex = Math.floor((Math.random() * verbs.length) + 1);
 
-    console.log(nounIndex, adverbsIndex, adjectivesIndex, verbsIndex);
+    const noun = nouns[nounIndex];
+    const adverb = adverbs[adverbsIndex];
+    const adjective = adjectives[adjectivesIndex];
+    const verb = verbs[verbsIndex];
+    
+    return adverb + ' ' + verb + ' ' + adjective + ' ' + noun;
 };
 
-makePhrase();
+console.log(makePhrase());
