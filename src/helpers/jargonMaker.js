@@ -289,4 +289,29 @@ const makePhrase = () => {
     return adverb + ' ' + verb + ' ' + adjective + ' ' + noun;
 };
 
-console.log(makePhrase());
+const getNoun = () => {
+    const nounIndex = Math.floor((Math.random() * nouns.length) + 1);
+    return nouns[nounIndex];
+};
+const getVerb = () => {
+    const verbIndex = Math.floor((Math.random() * verbs.length) + 1);
+    return verbs[verbIndex];
+};
+const getAdverb = () => {
+    const adverbIndex = Math.floor((Math.random() * adverbs.length) + 1);
+    return adverbs[adverbIndex];
+};
+const getAdjective = () => {
+    const adjectiveIndex = Math.floor((Math.random() * adjectives.length) + 1);
+    return adjectives[adjectiveIndex];
+};
+
+
+module.exports = {
+    makePhrase,
+    getNoun,
+    getVerb,
+    getAdverb,
+    getAdjective
+};
+
