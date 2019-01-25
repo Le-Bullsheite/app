@@ -2,19 +2,35 @@
   <figure>
       <blockquote>
           <span>"</span>
-                I am Warhol. I am the number one most impactful artist of our generation. 
-                I am Shakespeare in the flesh."
+                {{quoteBlockText}}
           <span>"</span>
       </blockquote> 
+      <figcaption>
+          - {{quoteBlockName}}, <i>{{quoteBlockDescription}}</i>
+      </figcaption>
   </figure>
 </template>
 
 <script>
 export default {
-
+    props: {
+        quoteBlockName: String,
+        quoteBlockDescription: String,
+        quoteBlockText: String
+    }
 }
 </script>
 
-<style>
-
+<style lang="postcss" scoped>
+figure {
+    display: block;
+    text-align: center;
+    padding: 2vw;
+    font-size: 4vh;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+blockquote {
+    margin: 1vh auto 1vh auto;
+}
 </style>
