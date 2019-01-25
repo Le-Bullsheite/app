@@ -1,19 +1,19 @@
 <template>
   <div>
-    <FakeJob/>
+    <Careers/>
   </div>
 </template>
 
 <script>
-import FakeJob from './components/careers/FakeJob.vue'
+import Careers from './components/careers/Careers.vue'
 export default {
   components: {
-    FakeJob
+    Careers
   }
 }
 </script>
 
-<style lang="postcss" scoped>
+<style>
 body {
   margin: 0;
 }
