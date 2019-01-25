@@ -1,14 +1,19 @@
 <template>
   <div>
-    <QuoteBlock/>
+    <Header/>
+    <Home/>
   </div>
 </template>
 
 <script>
-import QuoteBlock from './components/QuoteBlock.vue';
+// import QuoteBlock from './components/QuoteBlock.vue';
+import Home from './components/Home';
+import Header from './components/Header';
+
 export default {
   components: {
-    QuoteBlock
+    Home,
+    Header
   }
 }
 </script>
