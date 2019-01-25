@@ -1,8 +1,8 @@
 <template>
   <section>
-     <head>
-    <title> Le Bullsheite - Home </title>
-    </head>
+    <div> 
+      <h1>
+        Home </h1> </div>
     <hooper :itemsToShow="4" :centerMode="true" pagination="no">
       <slide>
       <img src="../../assets/adult.jpg">
@@ -17,8 +17,6 @@
       <img src="../../assets/adult.jpg" alt="">
       </slide>
     </hooper>
-     <button>&#10094;</button>
-    <button>&#10095;</button>
   </section>
 </template>
 
