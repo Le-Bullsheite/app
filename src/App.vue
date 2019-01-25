@@ -1,31 +1,19 @@
 <template>
   <div>
-    <QuoteBlock
-    :quoteBlockName="quoteBlockName"
-    :quoteBlockDescription="quoteBlockDescription"
-    :quoteBlockText="quoteBlockText"
-    />
+    <Careers/>
   </div>
 </template>
 
 <script>
-import QuoteBlock from './components/QuoteBlock.vue';
+import Careers from './components/Careers.vue'
 export default {
-  data() {
-    return {
-      quoteBlockName: 'Kayne West',
-      quoteBlockDescription: 'Voice of a Generation',
-      quoteBlockText: 'I am Warhol. I am the number one most impactful artist of our generation. I am Shakespeare in the flesh.'
-    }
-  },
   components: {
-    QuoteBlock
+    Careers
   }
-  
 }
 </script>
 
-<style>
+<style lang="postcss" scoped>
 body {
   margin: 0;
 }
