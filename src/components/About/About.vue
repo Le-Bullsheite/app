@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { getNoun } from '../../helpers/jargonMarker.js'; 
+
 </script>
 
 <style>
