@@ -2,9 +2,12 @@
     <div class="careers page">
         <div id="top">
             <img id="adult" src="../../assets/adult.jpg">
-            <h1 class="fade-in">
-                Work <span id="with">With</span> Us
+            <h1 id="work-with-us" class="fade-in standardH1">
+                Work <span class="yellow">With</span> Us
             </h1>
+            <h2 class="standardH2 fade-in" id="subheading">
+                <span class="yellow">Work</span> like a senior. <span class="yellow">Earn</span> like an intern.
+            </h2>
         </div>
         <div id="main">
             <div id="two-column">
@@ -16,7 +19,7 @@
             <img id="smiling-worker" src="../../assets/smiling-worker.jpg">
             </div>
             <div id="join-container">
-                <h2>
+                <h2 class="standardH2">
                     Join Our Team
                 </h2>
                 <hr>
@@ -71,8 +74,8 @@ export default {
     height: auto;
     z-index: -1;
 }
-#with {
-    color:rgb(254, 243, 132);
+#work-with-us {
+    margin-bottom: 9vh;
 }
 #main {
     background-color: white;
@@ -86,27 +89,14 @@ export default {
     padding-top: 15vh;
 }
 #top {
-    margin-bottom: 32vh;
+    margin-bottom: 4vh;
 }
 #smiling-worker {
     width: 98%;
     margin: 1vh;
-
 }
-h1 {
-    text-align: center;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    font-size: 16vh;
-    color: rgb(88, 85, 85);
-}
-h2 {
-    text-align: center;
-    margin: 0;
-    padding: 0 3vh 3vh 3vh;
-    font-size: 6vh;
-    color: rgb(88, 85, 85);
-    font-weight: bolder;
+#subheading {
+    font-size: 5vh;
 }
 h3 {
     text-align: center;
@@ -120,12 +110,30 @@ hr {
     border-top: 1px solid rgb(88, 85, 85);
     width: 30%;
 }
+.standardH1 {
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    font-size: 16vh;
+    color: rgb(88, 85, 85);
+}
+.standardH2 {
+    text-align: center;
+    margin: 0;
+    padding: 0 3vh 3vh 3vh;
+    font-size: 6vh;
+    color: rgb(88, 85, 85);
+    font-weight: bolder;
+}
 .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
+}
+.yellow {
+    color:rgb(254, 243, 132);
 }
 @keyframes fadeInOpacity {
 	0% {
