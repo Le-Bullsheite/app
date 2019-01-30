@@ -1,9 +1,11 @@
 <template>
-    <div>
-        <img id="adult" src="../../assets/adult.jpg">
-        <h1 class="fade-in">
-            Work <span id="with">With</span> Us
-        </h1>
+    <div class="careers page">
+        <div id="top">
+            <img id="adult" src="../../assets/adult.jpg">
+            <h1 class="fade-in">
+                Work <span id="with">With</span> Us
+            </h1>
+        </div>
         <div id="main">
             <div id="two-column">
                 <QuoteBlock
@@ -33,6 +35,7 @@
 <script>
 import Job from './Job.vue';
 import QuoteBlock from './QuoteBlock.vue';
+import { jargonMaker } from '../helpers/jargonMaker';
 
 export default {
     data() {
@@ -45,6 +48,9 @@ export default {
     components: {
         Job,
         QuoteBlock
+    },
+    methods: {
+        jargonMaker
     }
 };
 </script>
@@ -75,6 +81,12 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 8vh;
+    padding-top: 15vh;
+}
+#top {
+    margin-bottom: 32vh;
 }
 #smiling-worker {
     width: 98%;

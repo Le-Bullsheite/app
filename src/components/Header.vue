@@ -1,27 +1,27 @@
 <template>
   <section>
-    <header class="fade-in">
-      <img src="../../assets/logo.png" alt="">
+    <header>
+      <img src="../../assets/logo.png" alt="fancy logo">
     </header>
-      <nav class="fade-in">
+      <nav>
         <RouterLink to="/"> Home </RouterLink>
         <RouterLink to="/about"> About </RouterLink>
         <RouterLink to="/careers"> Careers </RouterLink>
         <RouterLink to="/contact"> Contact </RouterLink>
       </nav>
-    <main>
-      <RouterView></RouterView>
-    </main>
   </section>
 </template>
 
 <script>
+
 export default {
 
 };
 </script>
 
 <style scoped>
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+
 header {
   display: flex;
   flex-direction: row;

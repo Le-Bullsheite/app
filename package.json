@@ -9,6 +9,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
     "autoprefixer": "^9.4.6",
     "express": "^4.16.4",
     "hooper": "0.0.7",
