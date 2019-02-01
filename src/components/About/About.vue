@@ -4,6 +4,8 @@
       <h2>Our Mission Statement</h2>
       <blockquote class="mission"> Lé Bullsheite is {{ getNoun }} agency that strives to {{ verb }}
         the way people think about {{ noun }}. To deliver a {{ adjective }} product, that not only
+        {{ verb }} but {{ adverb }}. Lé Bullsheite is {{ getNoun }} agency that strives to {{ verb }}
+        the way people think about {{ noun }}. To deliver a {{ adjective }} product, that not only
         {{ verb }} but {{ adverb }}. 
       </blockquote>
     </div>
@@ -55,6 +57,7 @@ figure {
 blockquote {
     margin: 1vh auto 1vh auto;
     letter-spacing: .03em;
+    margin-top: 100px;
 }
 .span {
   color: yellow;

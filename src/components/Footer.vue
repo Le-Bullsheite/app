@@ -41,7 +41,7 @@ button {
 }
 button:hover {
   border:2px solid yellow;
-  background-color: #e7e7e7;
+  color: white;
 }
 .footer {
   border-top: solid 1pt black;

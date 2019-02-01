@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Welcome/>
+    <!-- <Welcome/> -->
     <carousel>
     <slide>
       <img src="../../../assets/laptop.jpg" width="100%" height="100%">
@@ -37,14 +37,14 @@
 import Clients from './Clients';
 import Testimony from './Testimony';
 import { Carousel, Slide } from 'vue-carousel';
-import Welcome from '../Welcome';
+// import Welcome from '../Welcome';
 export default {
     components: {
         Carousel,
         Slide,
         Clients,
         Testimony,
-        Welcome
+        // Welcome
     }
 };
 
@@ -68,13 +68,12 @@ figure {
     width: 50%;
     margin: 0 auto 0 auto;
     letter-spacing: .03em;
+    margin-top: 100px;
 }
 blockquote {
-    margin: 1vh auto 1vh auto;
+    margin: 1vh auto 1vh auto; 
 }
-div {
-  margin-top: 40px;
-}
+
 .span {
   color: yellow;
   -webkit-text-stroke-width: .4px;

@@ -51,6 +51,7 @@ ul {
   grid-row-gap: 100px;
   padding: 0;
   margin-top: 30px;
+  margin-bottom: 100px;
 
 }
 li {
