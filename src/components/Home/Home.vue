@@ -1,5 +1,6 @@
 <template>
   <section>
+    <Welcome/>
     <carousel>
     <slide>
       <img src="../../../assets/laptop.jpg" width="100%" height="100%">
@@ -36,12 +37,14 @@
 import Clients from './Clients';
 import Testimony from './Testimony';
 import { Carousel, Slide } from 'vue-carousel';
+import Welcome from '../Welcome';
 export default {
     components: {
         Carousel,
         Slide,
         Clients,
-        Testimony
+        Testimony,
+        Welcome
     }
 };
 
