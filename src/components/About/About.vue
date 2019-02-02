@@ -20,11 +20,8 @@
   </section>
 </template>
 
-<script>
 
-</script>
-
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css?family=Poppins:500%7CSorts+Mill+Goudy');
 * {
   font-family: 'Sorts Mill Goudy', serif;
