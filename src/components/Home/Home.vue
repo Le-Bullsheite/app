@@ -36,13 +36,12 @@
 import Clients from './Clients';
 import Testimony from './Testimony';
 import { Carousel, Slide } from 'vue-carousel';
-
 export default {
     components: {
         Carousel,
         Slide,
         Clients,
-        Testimony,
+        Testimony 
     }
 };
 
