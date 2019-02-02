@@ -306,7 +306,7 @@ const getAdjective = () => {
     return adjectives[adjectiveIndex];
 };
 
-console.log(makePhrase());
+
 module.exports = {
     makePhrase,
     getNoun,

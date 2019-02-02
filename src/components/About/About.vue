@@ -57,9 +57,11 @@ blockquote {
     letter-spacing: .03em;
 }
 .span {
-  color: yellow;
-  -webkit-text-stroke-width: .4px;
-  -webkit-text-stroke-color:rgb(184, 182, 182);
+    color: rgb(254, 243, 132);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(254, 243, 132);
+    letter-spacing: .03em;
+    font-style: italic;
 }
 </style>
 
