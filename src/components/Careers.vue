@@ -125,15 +125,15 @@ hr {
     color: rgb(88, 85, 85);
     font-weight: bolder;
 }
+.yellow {
+    color:rgb(254, 243, 132);
+}
 .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
-}
-.yellow {
-    color:rgb(254, 243, 132);
 }
 @keyframes fadeInOpacity {
 	0% {
