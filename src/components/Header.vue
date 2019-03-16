@@ -1,9 +1,9 @@
 <template>
   <section>
-    <header class="fade-in">
+    <header>
       <img src="../../assets/logo.png" alt="">
     </header>
-      <nav class="fade-in">
+      <nav>
         <RouterLink to="/"> Home </RouterLink>
         <RouterLink to="/about"> About </RouterLink>
         <RouterLink to="/careers"> Careers </RouterLink>
@@ -45,7 +45,7 @@ nav a {
 img {
   width: 125px;
   height: 75px;
-  z-index:99;
+  z-index:0;
 }
 .fade-in {
     opacity: 1;
