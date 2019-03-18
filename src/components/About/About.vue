@@ -1,12 +1,12 @@
 <template>
   <section>
+    <Statement />
     <div>
       <h2>Our Mission Statement</h2>
-      <blockquote class="mission"> Lé Bullsheite is {{ getNoun }} agency that strives to {{ verb }}
-        the way people think about {{ noun }}. To deliver a {{ adjective }} product, that not only
-        {{ verb }} but {{ adverb }}. Lé Bullsheite is {{ getNoun }} agency that strives to {{ verb }}
-        the way people think about {{ noun }}. To deliver a {{ adjective }} product, that not only
-        {{ verb }} but {{ adverb }}. 
+      <blockquote class="mission"> Lé Bullsheite is an agency that strives revolutionize
+        the way people think about brands. To deliver a brand-centered product, that not only
+        excites but sparks excitment. Lé Bullsheite is an agency that strives to disrupt
+        the way people think about marketing.
       </blockquote>
     </div>
     <div class="fade-in">
@@ -19,14 +19,22 @@
       </figcaption>
   </figure>
     </div>
+  <History />
   </section>
 </template>
 
 <script>
-
+import History from './History';
+import Statement from './Statement';
+export default {
+    components: {
+        History,
+        Statement
+    }
+};
 </script>
 
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css?family=Poppins:500%7CSorts+Mill+Goudy');
 * {
   font-family: 'Sorts Mill Goudy', serif;
@@ -60,9 +68,11 @@ blockquote {
     margin-top: 100px;
 }
 .span {
-  color: yellow;
-  -webkit-text-stroke-width: .4px;
-  -webkit-text-stroke-color:rgb(184, 182, 182);
+    color: rgb(254, 243, 132);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(254, 243, 132);
+    letter-spacing: .03em;
+    font-style: italic;
 }
 </style>
 
